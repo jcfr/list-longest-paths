@@ -12,7 +12,7 @@ Usage
 -----
 
 ```
-$ ./list_longest_paths.py -l 300 ~/Projects/Slicer-AHM-Superbuild-Debug/
+$ ./list_longest_paths.py ~/Projects/Slicer-AHM-Superbuild-Debug/
 ```
 ```
 [262] /home/jchris/Projects/Slicer-AHM-Superbuild-Debug/CTK-build/CTK-build/Libs/Visualization/VTK/Widgets/CMakeFiles/CTKVisualizationVTKWidgetsPythonQt.dir/generated_cpp/org_commontk_CTKVisualizationVTKWidgets/org_commontk_CTKVisualizationVTKWidgets_module_init.cpp.o
