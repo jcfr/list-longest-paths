@@ -6,7 +6,7 @@ Overview
 
 This script recursively traverse a given directory and identify which filepath are greater than a given length.
 
-This is particularly useful when trying to identitify which files living in a windows source or build tree are causing trouble due to the (Maximum Path Length Limitation)[http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx#maxpath].
+This is particularly useful when trying to identitify which files living in a windows source or build tree are causing trouble due to the [Maximum Path Length Limitation][maxpath-length-limit].
 
 Usage
 -----
@@ -81,4 +81,5 @@ limitations under the License.
 
 [fk]: http://help.github.com/forking/
 [pr]: https://help.github.com/articles/using-pull-requests
+[maxpath-length-limit]: http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx#maxpath
 
