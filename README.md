@@ -42,7 +42,7 @@ Analysis summary
 Installation
 ------------
 
-[Download the script](https://raw.github.com/jcfr/list-longest-paths/master/ list_longest_paths.py).
+[Download the script](https://raw.github.com/jcfr/list-longest-paths/master/list_longest_paths.py).
 
 
 Contributing
