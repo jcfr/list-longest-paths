@@ -12,9 +12,23 @@ Usage
 -----
 
 ```
+$ ./list_longest_paths.py -h
+Usage: list_longest_paths.py [options] <directory>
+
+Options:
+  -h, --help            show this help message and exit
+  -l MINIMUM_LENGTH, --minimum-length=MINIMUM_LENGTH
+                        specify minimum length to consider when listing the
+                        longest paths
+  -v, --verbose         Print verbose information
+  --extra-verbose       Print extra verbose information
+```
+
+By default `MINIMUM_LENGTH` is `259` (`MAX_PATH -1`) . See [Maximum Path Length Limitation][maxpath-length-limit].
+
+
+```
 $ ./list_longest_paths.py ~/Projects/Slicer-AHM-Superbuild-Debug/
-```
-```
 [262] /home/jchris/Projects/Slicer-AHM-Superbuild-Debug/CTK-build/CTK-build/Libs/Visualization/VTK/Widgets/CMakeFiles/CTKVisualizationVTKWidgetsPythonQt.dir/generated_cpp/org_commontk_CTKVisualizationVTKWidgets/org_commontk_CTKVisualizationVTKWidgets_module_init.cpp.o
 [281] /home/jchris/Projects/Slicer-AHM-Superbuild-Debug/Slicer-build/Modules/Loadable/EMSegment/Qt/Widgets/CMakeFiles/qSlicerEMSegmentModuleWidgetsPythonQt.dir/generated_cpp/org_slicer_module_qSlicerEMSegmentModuleWidgets/org_slicer_module_qSlicerEMSegmentModuleWidgets_module_init.cpp.o
 [277] /home/jchris/Projects/Slicer-AHM-Superbuild-Debug/Slicer-build/Modules/Loadable/EMSegment/Qt/Widgets/CMakeFiles/qSlicerEMSegmentModuleWidgetsPythonQt.dir/generated_cpp/org_slicer_module_qSlicerEMSegmentModuleWidgets/moc_org_slicer_module_qSlicerEMSegmentModuleWidgets_all.cpp.o
@@ -28,8 +42,6 @@ Note also that passing the `--verbose` options will provide you with more detail
 
 ```
 $ ./list_longest_paths.py -v -l 300 ~/Projects/Slicer-AHM-Superbuild-Debug/
-```
-```
 [318] /home/jchris/Projects/Slicer-AHM-Superbuild-Debug/Slicer-build/Modules/Loadable/TractographyDisplay/Widgets/CMakeFiles/qSlicerTractographyDisplayModuleWidgetsPythonQt.dir/generated_cpp/org_slicer_module_qSlicerTractographyDisplayModuleWidgets/org_slicer_module_qSlicerTractographyDisplayModuleWidgets_module_init.cpp.o
 [302] /home/jchris/Projects/Slicer-AHM-Superbuild-Debug/Slicer-build/Modules/Loadable/VolumeRendering/Widgets/CMakeFiles/qSlicerVolumeRenderingModuleWidgetsPythonQt.dir/generated_cpp/org_slicer_module_qSlicerVolumeRenderingModuleWidgets/org_slicer_module_qSlicerVolumeRenderingModuleWidgets_module_init.cpp.o
 
